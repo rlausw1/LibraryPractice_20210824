@@ -1,6 +1,7 @@
 package com.nepplus.librarypractice_20210824
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -15,6 +16,13 @@ class MainActivity : BaseActivity() {
         setValues()
 
     override fun setupEvents() {
+        callBtn.setOnClickListener {
+
+            //전화 연결 활용
+            val myUri = Uri.parse("tel: 02-222-2222")
+            val myyintent = Intent( Intent.ACTION_CALL, myUri)
+            startActivity(myyintent)
+        }
 
         profileImg.setOnClickListener {
 
