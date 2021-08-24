@@ -45,6 +45,9 @@ class MainActivity : BaseActivity() {
 
             }
 
+            //실제로 권한 확인 : Mainfest에도 적어두고 + 코틀린에서도 확인
+            //=> 라이브러리 문제로 현재 작업 불가
+
 
         }
 
