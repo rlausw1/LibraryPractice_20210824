@@ -53,6 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="02-222-2222"/>
 
         <Button
@@ -64,6 +65,22 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 활동한 사진"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/recentImg"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
 
 
 
